@@ -64,7 +64,7 @@ end
 
 # Generate a default feed date option if not provided
 if options[:date].nil? then
-  if options[:feed_type] == "full" then
+  if options[:feed_scope_type] == "full" then
   options[:date] = (Date.today-(Date.today.wday-1)).strftime("%Y%m%d")
   else
   options[:date] = Date.today.strftime("%Y%m%d")
