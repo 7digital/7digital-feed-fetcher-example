@@ -1,4 +1,4 @@
-feed-fetcher-example
+7digital-feed-fetcher-example
 ====================
 
 An example ruby script that downloads 7digital Catalogue Feeds
