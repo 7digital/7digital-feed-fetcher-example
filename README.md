@@ -9,24 +9,24 @@ NB: THIS EXAMPLE SCRIPT IS PROVIDED "AS IS", IT IS NOT MEANT TO BE USED IN PRODU
 
 ## Usage
 
-fetch_feed.rb (artist|release|track) [options]
+	fetch_feed.rb (artist|release|track) [options]
 
-    -i, --incremental                Flag to download incremental updates feed
-                                     (instead of full feed)
+		-i, --incremental                Flag to download incremental updates feed
+										 (instead of full feed)
 
-    -c, --country COUNTRY_CODE       Country of the feed (default: GB)
+		-c, --country COUNTRY_CODE       Country of the feed (default: GB)
 
-    -s, --shopid SHOP_ID             Shop ID of the feed
-                                     (optional, overrides country parameter)
+		-s, --shopid SHOP_ID             Shop ID of the feed
+										 (optional, overrides country parameter)
 
-    -d, --date YYYYMMDD              Date of the feed
-                                     (default: today for incremental feeds,
-                                     most recent Monday for full feeds)
+		-d, --date YYYYMMDD              Date of the feed
+										 (default: today for incremental feeds,
+										 most recent Monday for full feeds)
 
-    -o, --output FILE                File the downloaded feed will be saved to
-                                     (default: <country>_<type>_<date>.csv.gz)
+		-o, --output FILE                File the downloaded feed will be saved to
+										 (default: <country>_<type>_<date>.csv.gz)
 
-    -h, --help                       Display this screen
+		-h, --help                       Display this screen
 
 
 ## License
