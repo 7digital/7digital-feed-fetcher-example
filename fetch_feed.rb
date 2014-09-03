@@ -95,7 +95,7 @@ http_request.oauth!(http_client, OAuth::Consumer.new(CONSUMER_KEY, CONSUMER_SECR
 f = open(options[:output],"wb")
 begin
   http_client.request(http_request) do |resp|
-    if resp.code != '200' || resp["Content-Type"] != 'application/x-gzip' then
+    if resp.code != '200' || !resp["Content-Type"].start_with?('application/x-gzip') then
       puts(resp.code + " - " + resp.message)
       puts(resp.body)
       abort("Feed not downloaded")
