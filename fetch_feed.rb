@@ -1,6 +1,7 @@
 require 'optparse'
 require 'oauth'
 require 'net/http'
+require 'date'
 
 FEEDS_API_HOST = 'feeds.api.7digital.com'
 FEEDS_API_PATH = '/1.2/feed/'
